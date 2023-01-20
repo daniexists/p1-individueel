@@ -1,0 +1,110 @@
+:root {
+    --achtergrondkleur: rgb(244,236,226);
+    --tekstkleur: rgb(134,79,68);
+    --buttonsetckleur: rgb(97,105,173);
+    --tweedetekstkleur: rgb(255,212,29);
+
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./fonts/poppins-regular-webfont.woff');
+    src: url('./fonts/poppins-regular-webfont.woff2');
+}
+@font-face {
+    font-family: 'baskerville';
+    src: url('./fonts/baskervillebt-webfont.woff');
+    src: url('./fonts/baskervillebt-webfont.woff2');
+}
+
+
+header  {
+    display: flex;
+    flex-direction: space-evenly;
+}  
+
+body {
+    background-color: var(--achtergrondkleur);
+}
+
+header nav ul li a {
+    background-color:var(--buttonsetckleur);
+    text-align: center;
+    width: 200px;
+    color:var(--tweedetekstkleur);
+    font-size: 16px;
+    font-family: 'baskerville';
+    padding: 10px;
+
+}
+
+main section a {
+    background-color: var(--buttonsetckleur);
+    text-align: center;
+    width: 200px;
+    color: var(--tweedetekstkleur);
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'baskerville';
+    margin-top: 5px;
+}
+
+#logo {
+    width: 130px;
+}
+
+
+p {
+    color: var(--tekstkleur);
+    font-family: 'poppins';
+}
+
+
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    display: flex;
+}
+
+h1{
+     color: var(--tekstkleur);
+     font-family: 'baskerville';
+}
+
+h2{
+    color: var(--tekstkleur);
+    font-family: 'baskerville';
+    font-size:  1.2em;
+}
+
+
+#indeximgeven {
+    width: 180px;
+    height: auto;
+    margin-right: 1em;
+}
+#indeximgoneven {
+    width: 180px;
+    height: auto;
+    margin-left: 1em;
+    order: 3;
+}
+
+h3:hover,a:hover{
+    background-color: var(--tekstkleur);
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+}
+
+h2:nth-of-type(2){
+    display: flex;
+    justify-content: flex-end;
+}
